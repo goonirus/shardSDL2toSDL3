@@ -6,7 +6,9 @@
 *   
 */
 
-using SDL2;
+
+using SDL;
+using static SDL.SDL3;
 using System;
 
 namespace Shard
@@ -17,29 +19,30 @@ namespace Shard
 
         public override void playSound(string file)
         {
-            SDL.SDL_AudioSpec have, want;
-            uint length, dev;
-            IntPtr buffer;
-
-            
-            file = Bootstrap.getAssetManager().getAssetPath(file);
+            //SDL.SDL_AudioSpec have, want;
+            //uint length, dev;
+            //IntPtr buffer;
 
 
-            SDL.SDL_LoadWAV(file, out have, out buffer, out length);
+            //file = Bootstrap.getAssetManager().getAssetPath(file);
 
-            dev = SDL.SDL_OpenAudioDevice(IntPtr.Zero, 0, ref have, out want, 0);
 
-            if (SDL.SDL_GetQueuedAudioSize(dev) >= 15)
-            {
-                SDL.SDL_CloseAudioDevice(dev);
-                dev = SDL.SDL_OpenAudioDevice(IntPtr.Zero, 0, ref have, out want, 0);
-            }
+            //SDL.SDL_LoadWAV(file, out have, out buffer, out length);
 
-            int success = SDL.SDL_QueueAudio(dev, buffer, length);
-            SDL.SDL_PauseAudioDevice(dev, 0);
+            //dev = SDL.SDL_OpenAudioDevice(IntPtr.Zero, 0, ref have, out want, 0);
 
-            SDL.SDL_FreeWAV(buffer);
+            //if (SDL.SDL_GetQueuedAudioSize(dev) >= 15)
+            //{
+            //    SDL.SDL_CloseAudioDevice(dev);
+            //    dev = SDL.SDL_OpenAudioDevice(IntPtr.Zero, 0, ref have, out want, 0);
+            //}
 
+            //int success = SDL.SDL_QueueAudio(dev, buffer, length);
+            //SDL.SDL_PauseAudioDevice(dev, 0);
+
+            //SDL.SDL_FreeWAV(buffer);
+            // TODO: re-implement using SDL3 audio stream/device API.
+            return;
         }
 
     }

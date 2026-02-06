@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pLdj6HBv8T0=",
+  "dgSpecHash": "gvuD61Li9h0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\natas\\Downloads\\shard-main\\shard-main\\ConsoleApp1\\Shard.csproj",
+  "projectFilePath": "D:\\File\\Game Design\\3 Engine\\shard\\shard-main\\ConsoleApp1\\Shard.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\natas\\.nuget\\packages\\sayers.sdl2.core\\1.0.11\\sayers.sdl2.core.1.0.11.nupkg.sha512",
-    "C:\\Users\\natas\\.nuget\\packages\\sdl2-cs\\2.0.0\\sdl2-cs.2.0.0.nupkg.sha512"
+    "C:\\Users\\Uniurs\\.nuget\\packages\\ppy.sdl3-cs\\2025.1205.0\\ppy.sdl3-cs.2025.1205.0.nupkg.sha512",
+    "C:\\Users\\Uniurs\\.nuget\\packages\\ppy.sdl3_image-cs\\2025.1205.0\\ppy.sdl3_image-cs.2025.1205.0.nupkg.sha512",
+    "C:\\Users\\Uniurs\\.nuget\\packages\\ppy.sdl3_ttf-cs\\2025.1205.0\\ppy.sdl3_ttf-cs.2025.1205.0.nupkg.sha512"
   ],
   "logs": []
 }

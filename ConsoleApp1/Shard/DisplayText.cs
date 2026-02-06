@@ -10,7 +10,9 @@
 *   @author Kyle Agius (see Changelog for 1.3.0)
 */
 
-using SDL2;
+using SDL;
+using static SDL.SDL3;
+using static SDL.SDL3_ttf;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -76,16 +78,22 @@ namespace Shard
         private Dictionary<string, IntPtr> fontLibrary;
         public override void clearDisplay()
         {
-            foreach (TextDetails td in myTexts)
+            unsafe
             {
-                SDL.SDL_DestroyTexture(td.LblText);
+                SDL_Renderer* renderer = (SDL_Renderer*)_rend;
+
+                foreach (TextDetails td in myTexts)
+                {
+                    SDL_DestroyTexture((SDL_Texture*)td.LblText);
+                }
+
+                myTexts.Clear();
+
+                SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+                SDL_RenderClear(renderer);
             }
-
-            myTexts.Clear();
-            SDL.SDL_SetRenderDrawColor(_rend, 0, 0, 0, 255);
-            SDL.SDL_RenderClear(_rend);
-
         }
+
 
         public IntPtr loadFont(string path, int size)
         {
@@ -96,7 +104,15 @@ namespace Shard
                 return fontLibrary[key];
             }
 
-            fontLibrary[key] = SDL_ttf.TTF_OpenFont(path, size);
+            unsafe
+            {
+                byte[] utf8 = System.Text.Encoding.UTF8.GetBytes(path + "\0");
+                fixed (byte* pPath = utf8)
+                {
+                    fontLibrary[key] = (IntPtr)TTF_OpenFont(pPath, size);
+                }
+            }
+
             return fontLibrary[key];
         }
 
@@ -105,29 +121,38 @@ namespace Shard
 
 
         }
-
         private void draw()
         {
-
-            foreach (TextDetails td in myTexts)
+            unsafe
             {
+                SDL_Renderer* renderer = (SDL_Renderer*)_rend;
 
-                SDL.SDL_Rect sRect;
+                foreach (TextDetails td in myTexts)
+                {
+                    // skip empty
+                    if (td.LblText == IntPtr.Zero)
+                        continue;
 
-                sRect.x = (int)td.X;
-                sRect.y = (int)td.Y;
-                sRect.w = 0;
-                sRect.h = 0;
+                    SDL_FRect dst;
+                    dst.x = (float)td.X;
+                    dst.y = (float)td.Y;
 
+                    float w = 0, h = 0;
 
-                SDL_ttf.TTF_SizeText(td.Font, td.Text, out sRect.w, out sRect.h);
-                SDL.SDL_RenderCopy(_rend, td.LblText, IntPtr.Zero, ref sRect);
+                    SDL_Texture* texture = (SDL_Texture*)td.LblText;
+                    SDL_GetTextureSize(texture, &w, &h);
 
+                    dst.w = w;
+                    dst.h = h;
+
+                    SDL_RenderTexture(renderer, texture, null, &dst);
+                }
+
+                SDL_RenderPresent(renderer);
             }
-
-            SDL.SDL_RenderPresent(_rend);
-
         }
+
+
 
         public override void display()
         {
@@ -138,83 +163,69 @@ namespace Shard
 
         public override void setFullscreen()
         {
-            SDL.SDL_SetWindowFullscreen(_window,
-                 (uint)SDL.SDL_WindowFlags.SDL_WINDOW_FULLSCREEN_DESKTOP);
+            unsafe
+            {
+                SDL_Window* win = (SDL_Window*)_window;
+                SDL_SetWindowFullscreen(win, true);
+            }
         }
 
         public override void initialize()
         {
             fontLibrary = new Dictionary<string, IntPtr>();
-
             setSize(1280, 864);
 
-            SDL.SDL_Init(SDL.SDL_INIT_EVERYTHING);
-            SDL_ttf.TTF_Init();
-            _window = SDL.SDL_CreateWindow("Shard Game Engine",
-                SDL.SDL_WINDOWPOS_CENTERED,
-                SDL.SDL_WINDOWPOS_CENTERED,
-                getWidth(),
-                getHeight(),
-                0);
+            unsafe
+            {
+                SDL_Init(SDL_InitFlags.SDL_INIT_VIDEO);
 
+                TTF_Init();
 
-            _rend = SDL.SDL_CreateRenderer(_window,
-                -1,
-                SDL.SDL_RendererFlags.SDL_RENDERER_ACCELERATED);
+                SDL_Window* win = SDL_CreateWindow(
+                    "Shard Game Engine",
+                    getWidth(),
+                    getHeight(),
+                    0
+                );
+                _window = (nint)win;
 
+                SDL_Renderer* renderer = SDL_CreateRenderer(win, new Utf8String());
+                _rend = (nint)renderer;
 
-            SDL.SDL_SetRenderDrawBlendMode(_rend, SDL.SDL_BlendMode.SDL_BLENDMODE_BLEND);
-
-            SDL.SDL_SetRenderDrawColor(_rend, 0, 0, 0, 255);
-
+                // Blend mode / clear color
+                SDL_SetRenderDrawBlendMode(renderer, SDL_BlendMode.SDL_BLENDMODE_BLEND);
+                SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+            }
 
             myTexts = new List<TextDetails>();
         }
 
 
-
         public override void showText(string text, double x, double y, int size, int r, int g, int b)
         {
-            int nx, ny, w = 0, h = 0;
-
             string ffolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Fonts);
-
             IntPtr font = loadFont(ffolder + "\\calibri.ttf", size);
-            SDL.SDL_Color col = new SDL.SDL_Color();
 
+            SDL_Color col;
             col.r = (byte)r;
             col.g = (byte)g;
             col.b = (byte)b;
-            col.a = (byte)255;
+            col.a = 255;
 
             if (font == IntPtr.Zero)
             {
-                Debug.getInstance().log("TTF_OpenFont: " + SDL.SDL_GetError());
+                Debug.getInstance().log("TTF_OpenFont failed: " + SDL_GetError());
+                return;
             }
 
-            TextDetails td = new TextDetails(text, x, y, col, 12);
-
+            TextDetails td = new TextDetails(text, x, y, col, size);
             td.Font = font;
 
-            IntPtr surf = SDL_ttf.TTF_RenderText_Solid(td.Font, td.Text, td.Col);
-            IntPtr lblText = SDL.SDL_CreateTextureFromSurface(_rend, surf);
-            SDL.SDL_FreeSurface(surf);
-
-            SDL.SDL_Rect sRect;
-
-            sRect.x = (int)x;
-            sRect.y = (int)y;
-            sRect.w = w;
-            sRect.h = h;
-
-            SDL.SDL_QueryTexture(lblText, out _format, out _access, out sRect.w, out sRect.h);
-
-            td.LblText = lblText;
+            td.LblText = IntPtr.Zero;
 
             myTexts.Add(td);
-
-
         }
+
         public override void showText(char[,] text, double x, double y, int size, int r, int g, int b)
         {
             string str = "";

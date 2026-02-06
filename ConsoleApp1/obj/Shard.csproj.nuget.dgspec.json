@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natas\\Downloads\\shard-main\\shard-main\\ConsoleApp1\\Shard.csproj": {}
+    "D:\\File\\Game Design\\3 Engine\\shard\\shard-main\\ConsoleApp1\\Shard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natas\\Downloads\\shard-main\\shard-main\\ConsoleApp1\\Shard.csproj": {
+    "D:\\File\\Game Design\\3 Engine\\shard\\shard-main\\ConsoleApp1\\Shard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natas\\Downloads\\shard-main\\shard-main\\ConsoleApp1\\Shard.csproj",
+        "projectUniqueName": "D:\\File\\Game Design\\3 Engine\\shard\\shard-main\\ConsoleApp1\\Shard.csproj",
         "projectName": "Shard",
-        "projectPath": "C:\\Users\\natas\\Downloads\\shard-main\\shard-main\\ConsoleApp1\\Shard.csproj",
-        "packagesPath": "C:\\Users\\natas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natas\\Downloads\\shard-main\\shard-main\\ConsoleApp1\\obj\\",
+        "projectPath": "D:\\File\\Game Design\\3 Engine\\shard\\shard-main\\ConsoleApp1\\Shard.csproj",
+        "packagesPath": "C:\\Users\\Uniurs\\.nuget\\packages\\",
+        "outputPath": "D:\\File\\Game Design\\3 Engine\\shard\\shard-main\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Application\\Tools\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\natas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Uniurs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,19 +44,23 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
-            "SDL2-CS": {
+            "ppy.SDL3-CS": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2025.1205.0, )"
             },
-            "Sayers.SDL2.Core": {
+            "ppy.SDL3_image-CS": {
               "target": "Package",
-              "version": "[1.0.11, )"
+              "version": "[2025.1205.0, )"
+            },
+            "ppy.SDL3_ttf-CS": {
+              "target": "Package",
+              "version": "[2025.1205.0, )"
             }
           },
           "imports": [
@@ -71,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

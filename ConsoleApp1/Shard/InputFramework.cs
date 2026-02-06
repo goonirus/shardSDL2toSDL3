@@ -7,8 +7,8 @@
 *   @version 1.0
 *   
 */
-
-using SDL2;
+using SDL;
+using static SDL.SDL3;
 
 namespace Shard
 {
@@ -18,101 +18,74 @@ namespace Shard
     {
 
         double tick, timeInterval;
-        public override void getInput()
+        public override unsafe void getInput()
         {
-
-            SDL.SDL_Event ev;
-            int res;
+            SDL_Event ev;
             InputEvent ie;
 
             tick += Bootstrap.getDeltaTime();
 
             if (tick < timeInterval)
-            {
                 return;
-            }
 
             while (tick >= timeInterval)
             {
-
-                res = SDL.SDL_PollEvent(out ev);
-
-
-                if (res != 1)
+                if (!SDL_PollEvent(&ev))
                 {
                     return;
                 }
 
+
                 ie = new InputEvent();
 
-                if (ev.type == SDL.SDL_EventType.SDL_MOUSEMOTION)
+                if (ev.type == (uint)SDL_EventType.SDL_EVENT_MOUSE_MOTION)
                 {
-                    SDL.SDL_MouseMotionEvent mot;
-
-                    mot = ev.motion;
-
-                    ie.X = mot.x;
-                    ie.Y = mot.y;
-
+                    SDL_MouseMotionEvent mot = ev.motion;
+                    ie.X = (int)mot.x;
+                    ie.Y = (int)mot.y;
                     informListeners(ie, "MouseMotion");
                 }
 
-                if (ev.type == SDL.SDL_EventType.SDL_MOUSEBUTTONDOWN)
+                if (ev.type == (uint)SDL_EventType.SDL_EVENT_MOUSE_BUTTON_DOWN)
                 {
-                    SDL.SDL_MouseButtonEvent butt;
-
-                    butt = ev.button;
-
+                    SDL_MouseButtonEvent butt = ev.button;
                     ie.Button = (int)butt.button;
-                    ie.X = butt.x;
-                    ie.Y = butt.y;
-
+                    ie.X = (int)butt.x;
+                    ie.Y = (int)butt.y;
                     informListeners(ie, "MouseDown");
                 }
 
-                if (ev.type == SDL.SDL_EventType.SDL_MOUSEBUTTONUP)
+                if (ev.type == (uint)SDL_EventType.SDL_EVENT_MOUSE_BUTTON_UP)
                 {
-                    SDL.SDL_MouseButtonEvent butt;
-
-                    butt = ev.button;
-
+                    SDL_MouseButtonEvent butt = ev.button;
                     ie.Button = (int)butt.button;
-                    ie.X = butt.x;
-                    ie.Y = butt.y;
-
+                    ie.X = (int)butt.x;
+                    ie.Y = (int)butt.y;
                     informListeners(ie, "MouseUp");
                 }
 
-                if (ev.type == SDL.SDL_EventType.SDL_MOUSEWHEEL)
+                if (ev.type == (uint)SDL_EventType.SDL_EVENT_MOUSE_WHEEL)
                 {
-                    SDL.SDL_MouseWheelEvent wh;
-
-                    wh = ev.wheel;
-
-                    ie.X = (int)wh.direction * wh.x;
-                    ie.Y = (int)wh.direction * wh.y;
-
+                    SDL_MouseWheelEvent wh = ev.wheel;
+                    ie.X = (int)wh.x;
+                    ie.Y = (int)wh.y;
                     informListeners(ie, "MouseWheel");
                 }
 
-
-                if (ev.type == SDL.SDL_EventType.SDL_KEYDOWN)
+                if (ev.type == (uint)SDL_EventType.SDL_EVENT_KEY_DOWN)
                 {
-                    ie.Key = (int)ev.key.keysym.scancode;
+                    ie.Key = (int)ev.key.scancode;
                     Debug.getInstance().log("Keydown: " + ie.Key);
                     informListeners(ie, "KeyDown");
                 }
 
-                if (ev.type == SDL.SDL_EventType.SDL_KEYUP)
+                if (ev.type == (uint)SDL_EventType.SDL_EVENT_KEY_UP)
                 {
-                    ie.Key = (int)ev.key.keysym.scancode;
+                    ie.Key = (int)ev.key.scancode;
                     informListeners(ie, "KeyUp");
                 }
 
-                tick -= timeInterval;
             }
-
-
         }
 
         public override void initialize()

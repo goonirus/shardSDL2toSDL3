@@ -1,35 +1,73 @@
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libFLAC-8.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libjpeg-9.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libmodplug-1.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libmpg123-0.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libogg-0.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libopus-0.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libopusfile-0.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libpng16-16.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libtiff-5.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libvorbis-0.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\libwebp-7.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\SDL2.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\SDL2_image.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\SDL2_mixer.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\SDL2_ttf.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\zlib1.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.exe
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.deps.json
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.runtimeconfig.json
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.pdb
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Sayers.SDL2.Core.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.csproj.AssemblyReference.cache
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.csproj.ResolveComReference.cache
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.AssemblyInfoInputs.cache
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.AssemblyInfo.cs
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.csproj.CoreCompileInputs.cache
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.sourcelink.json
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.csproj.Up2Date
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\refint\Shard.dll
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.pdb
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.genruntimeconfig.cache
-C:\Users\natas\Downloads\shard-main\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\ref\Shard.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.csproj.AssemblyReference.cache
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.GeneratedMSBuildEditorConfig.editorconfig
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.AssemblyInfoInputs.cache
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.AssemblyInfo.cs
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.csproj.CoreCompileInputs.cache
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.exe
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.deps.json
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.runtimeconfig.json
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\Shard.pdb
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\SDL3-CS.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\SDL3_image-CS.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\SDL3_ttf-CS.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3.xcframework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3.xcframework\ios-arm64\SDL3.framework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3.xcframework\ios-arm64\SDL3.framework\SDL3
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3.xcframework\ios-arm64_x86_64-simulator\SDL3.framework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3.xcframework\ios-arm64_x86_64-simulator\SDL3.framework\SDL3
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libSDL3.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSDL3.dylib
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSDL3.dylib
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\SDL3.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\SDL3.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\SDL3.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_image.xcframework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_image.xcframework\ios-arm64\SDL3_image.framework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_image.xcframework\ios-arm64\SDL3_image.framework\SDL3_image
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_image.xcframework\ios-arm64_x86_64-simulator\SDL3_image.framework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_image.xcframework\ios-arm64_x86_64-simulator\SDL3_image.framework\SDL3_image
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libSDL3_image.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSDL3_image.dylib
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSDL3_image.dylib
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\SDL3_image.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\SDL3_image.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\SDL3_image.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_ttf.xcframework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_ttf.xcframework\ios-arm64\SDL3_ttf.framework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_ttf.xcframework\ios-arm64\SDL3_ttf.framework\SDL3_ttf
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_ttf.xcframework\ios-arm64_x86_64-simulator\SDL3_ttf.framework\Info.plist
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\ios\native\SDL3_ttf.xcframework\ios-arm64_x86_64-simulator\SDL3_ttf.framework\SDL3_ttf
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libSDL3_ttf.so
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSDL3_ttf.dylib
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSDL3_ttf.dylib
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\SDL3_ttf.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\SDL3_ttf.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\SDL3_ttf.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.csproj.Up2Date
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\refint\Shard.dll
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.pdb
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\Shard.genruntimeconfig.cache
+D:\File\Game Design\3 Engine\shard\shard-main\ConsoleApp1\obj\Debug\net8.0-windows\ref\Shard.dll
