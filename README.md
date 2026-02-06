@@ -1,4 +1,5 @@
 P.S.1 This assignment was completed individually, and the group members were not involved. The Git repository link was provided solely to make it easier for the reviewer to inspect the specific changes.
+
 P.S.2 Because of time constraints, not all features were migrated. The overall process involved replacing the SDL2 library with SDL3 and then resolving all resulting errors. The game can now run and be tested normally.
 
 
